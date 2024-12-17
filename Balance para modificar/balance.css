@@ -1,0 +1,49 @@
+body{
+    background-color: #abb;
+    margin: 20px;
+}
+ol{
+    color: blueviolet;
+    font-size: 14px;
+    font-family: Gill Sans MT;
+    font-weight: bold ;
+    padding: 10px;
+    
+}
+
+h2{
+    color: brown;
+    font-size: larger;
+    font-family:sans-serif;
+    padding: 10px;    
+}
+form{
+}
+.ingreso, .perdida,.horas, .peso-horas {
+    color: rgb(33, 11, 226);
+    width: 50%;
+    font-size:14px;
+    font-style: italic;
+    margin: 2px;
+    padding-left: 0px;
+    border: 2px solid #abb;
+    border-radius: 5px;
+}
+
+input{
+    width: 70%;
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    border: 2px solid #000;
+    border-radius: 5px;
+    background-color: #abf;
+    padding: 5px;
+    margin: 5px;
+
+}
+label{
+    padding-right: 10px;
+}

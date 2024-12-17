@@ -1,0 +1,25 @@
+body{
+    background:#444;
+    color:#ddd;
+    margin:60px;
+    
+}
+details{
+    background: transparent;
+    border: 1px solid #f1bbbb;
+    padding: 10px;
+    border-radius: 6px;
+    margin:6px;
+    font-size: 1em;
+    color:#3bb;
+}
+summary{
+    background-color: transparent;
+    padding: 9x;
+    border-bottom: 1px solid #ddd;
+    color: #3fff;
+
+}
+ul{
+    font-weight: 100px;
+}

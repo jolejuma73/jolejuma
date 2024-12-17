@@ -1,0 +1,22 @@
+body{
+    color:#800;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    background-color:#008;
+}
+div{
+    font-family: sans-serif;
+    color: #80f;
+    width: 300px;
+    background-color:#0f9;
+
+} 
+h1{
+    color: #555;
+}
+h1{
+    color:unset;
+}
+p{
+    color:#08f;
+}
+/*Como h1 no tiene color de texto, hereda el superior que es el de div y como tampoco tiene background ni el p, heredan el color de fondo del div y el resto de propiedades que no tienen definidas, */
