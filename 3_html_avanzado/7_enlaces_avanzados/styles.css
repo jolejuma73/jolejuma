@@ -71,5 +71,6 @@ legend{
     font-size: 16px;
 }
 a{
-    color:#48e
+    color:#48e;
+    text-decoration: none;
 }
