@@ -1,9 +1,15 @@
 body{
-    color:#800;
+color:#84a;
+}
+#titulo-principal{
+    color:#2b6;
 }
 .titulo{
-    color: #00e;
+color: #00e;
+}
+div{
+color:#28c;
 }
 h1{
-    color:#700;
+color: #f60 !important;
 }
