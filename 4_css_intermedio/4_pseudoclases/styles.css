@@ -48,8 +48,7 @@ li:nth-of-type(7){
         padding: 30px;
     }
     /*MODIFICANDO CUANDO ESTA CHECKED*/
-
-    input[type="checkbox"]{
+        input[type="checkbox"]{
         margin: 50px;
     }
     input[type="checkbox"]:checked{
@@ -57,10 +56,19 @@ li:nth-of-type(7){
     }
     /*SELECCIONANDO ENLACES NO VISITADOS*/
     a:link{
-        color:#800
+        color:#800;
     }
         /*SELECCIONANDO ENLACES VISITADOS*/
     a:visited{
         color:#080;
     }
+    /*SELECCIONANDO INPUT VALIDO*/
+    input:valid{
+        color: #009;
+    }
+        /*SELECCIONANDO INPUT NO VALIDO*/
+    input:invalid{
+        color:#800;
+    }
+
 
