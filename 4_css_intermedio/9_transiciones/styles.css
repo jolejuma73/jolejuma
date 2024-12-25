@@ -3,33 +3,20 @@ body {
     font-family: sans-serif;
 }
 .box {
-    width: 100px;
-            height: 50px;
-            background-color: #f00;
-            margin-top: 50px;
-            text-align: center;
-            font-weight: bold;
-            transition: left 5s .box {
-    width: 100px;
-            height: 50px;
-            background-color: #f00;
-            margin-top: 50px;
-            text-align: center;
-            font-weight: bold;
-            transition: left 1s  2s;
-            color: #000;
-            position: relative; 
-            left: 0;
-            
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    color: #fff;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    transition-property: background-color,color;
+    transition-duration: 1s;
+    transition-delay: 3s;
 }
-body:hover .box {
-    left: 700px;
-};
-            color: #000;
-            position: relative; 
-            left: 0;
-            
-}
-body:hover .box {
-    left: 700px;
+.box:hover {
+color: #008;  
+background-color: #456;
 }
