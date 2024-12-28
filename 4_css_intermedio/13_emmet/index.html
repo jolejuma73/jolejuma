@@ -100,6 +100,7 @@
 
 <!--header.header>nav.header-nav>ul.header-ul>li.list-item*4>a.link y    enter-->
 <h3>header.header>nav.header-nav>ul.header-ul>li.list-item*4>a.link y    enter</h3>
+<p>header.header>nav.header-nav>ul.header-ul>li.list-item*4>a.link y    enter     es un header con la class="header" con un nav con la class="header-nav seguido de un ul con la class="header-ul seguido de 4 li con la class="list-item" y 4 a href con la class="link"</p>
 <header class="header">
     <nav class="header-nav">
         <ul class="header-ul">
@@ -111,6 +112,8 @@
     </nav>
 </header>
 <!--header.header>nav.header-nav>ul.header-ul>li.list-item*4>a.link{Texto}    y    enter-->
+<h3>header.header>nav.header-nav>ul.header-ul>li.list-item*4>a.link{Texto}    y    enter</h3>
+<p>
 <header class="header">
     <nav class="header-nav">
         <ul class="header-ul">
@@ -121,28 +124,29 @@
         </ul>
     </nav>
 </header>
-
+</p>
 <!--header.header>nav.header-nav>ul.header-ul>li.list-item*4>a.link{Texto $}    y    enter-->
 <!-- header.header: Crear un header con la class header. El punto es para crear las clases-->
 <!-- header.header>nav.header-nav:  Crear un nav class="header-nav" dentro de header class="header" Dentro de lo de la izquierda introducimos lo de la derecha.-->
 <!--ul.header-ul>li.list-item*4>a.link{Texto $}: Dentro del ul con la clas="header-ul" crear 4 Li con la class="list-item" con4 a href con la clas="link" y con el texto del 1 al 4 y cerrado con la a y con el li-->
-
+<p>ul.header-ul>li.list-item*4>a.link{Texto $}: Dentro de un header con la clas="header" crea un nav con la class="header-nav" seguido de un  ul con la class="header-ul" y crea 4 Li con la class="list-item" con 4 a href con la class="link" y con el texto del 1 al 4 y cerrado con la a y con el li</p>
 <header class="header">
     <nav class="header-nav">
         <ul class="header-ul">
-            <li class="list-item"><a href="" class="link">Texto 1</a></li>
-            <li class="list-item"><a href="" class="link">Texto 2</a></li>
-            <li class="list-item"><a href="" class="link">Texto 3</a></li>
-            <li class="list-item"><a href="" class="link">Texto 4</a></li>
+            <li class="list-item"><a href="" class="link">Texto 1  </a></li>
+            <li class="list-item"><a href="" class="link">Texto 2  </a></li>
+            <li class="list-item"><a href="" class="link">Texto 3  </a></li>
+            <li class="list-item"><a href="" class="link">Texto 4  </a></li>
         </ul>
     </nav>
 </header>
 <!--script:src-->
 <script src=""></script>
+
 <header class="header">
     <nav class="header-nav">
         <ul class="header-ul">
-            <li class="list-item"><a href="HTTP:77PRUEBA.COM" class="link">Texto 1</a></li>
+            <li class="list-item"><a href="" class="link">Texto 1</a></li>
             <li class="list-item"><a href="" class="link">Texto 2</a></li>
             <li class="list-item"><a href="" class="link">Texto 3</a></li>
             <li class="list-item"><a href="" class="link">Texto 4</a></li>
@@ -155,6 +159,27 @@
         </ul>
     </nav>
 </header>
+<h3>header.header>nav.header-nav>ul.header-ul>(li.list-item>a.link{Texto $})*10</h3>
+<p>Crea  entro de un header con la clas="header" crea un nav con la class="header-nav" seguido de un  ul con la class="header-ul" y crea 4la estructura que hay entre parentesis ( Li con la class="list-item"> a href con la class="link" y con el Texto del 1 al número de elementos) lo multiplicas por el número que escribamos.</p>
+
+<ul>
+<li>__header class="header"></li>
+<li>____nav class="header-nav"></li>
+<li>______ul class="header-ul"></li>
+<li>________li class="list-item">__a href="" class="link">Texto 1</a></li></li>
+<li>________li class="list-item">__a href="" class="link">Texto 2</a></li></li>
+<li>________li class="list-item">__a href="" class="link">Texto 3</a></li></li>
+<li>________li class="list-item">__a href="" class="link">Texto 4</a></li></li>
+<li>________li class="list-item">__a href="" class="link">Texto 5</a></li></li>
+<li>________li class="list-item">__a href="" class="link">Texto 6</a></li></li>
+<li>________li class="list-item">__a href="" class="link">Texto 7</a></li></li>
+<li>________li class="list-item">__a href="" class="link">Texto 8</a></li></li>
+<li>________li class="list-item">__a href="" class="link">Texto 9</a></li></li>
+<li>________li class="list-item">__a href="" class="link">Texto 10</a></li></li>
+<li>______/ul></li>
+<li>____/nav></li>
+<li>__/header></li>
+</ul>
 <header class="header">
     <nav class="header-nav">
         <ul class="header-ul">
@@ -168,6 +193,61 @@
             <li class="list-item"><a href="" class="link">Link 8</a></li>
             <li class="list-item"><a href="" class="link">Link 9</a></li>
             <li class="list-item"><a href="" class="link">Link 10</a></li>
+        </ul>
+    </nav>
+</header>
+<h3>otra opción es crear un snippet</h3>
+
+
+    <pre>
+&#123;
+    "list item":  &#123;
+        "prefix": "li",
+        "body":[
+            "&lt;li&gt;&lt;a href='&#36;&#123;CLIPBOARD&#125;'&gt;&#36;&#123;1:LINK_NAME&#125;&lt;/a&gt;&lt;/li&gt;"
+        ],
+        "description":"Creando un elemento de una lista en un menú"
+    &#125;,
+    "Estructura header": &#123;
+        "prefix":"fullheader",
+        "body":["header.header&gt;nav.header-nav&gt;ul.header-ul&gt;(li.list-item&gt;a.link&#123;Link $&#125;)*&#36;&#123;1:CANTIDAD&#125;"],
+        "Description":"Estructura header completa"
+    &#125;
+&#125;
+    </pre>
+
+
+<p>
+    &#123;<br>
+    "list item":  &#123;<br>
+    &nbsp;"prefix": "li",<br>
+    &nbsp;"body":[<br>
+    &nbsp;"&lt;li&gt;&lt;a href='&#36;&#123;CLIPBOARD&#125;'&gt;&#36;&#123;1:LINK_NAME&#125;&lt;/a&gt;&lt;/li&gt;"<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;],<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"description":"Creando un elemento de una lista en un menú"<br>
+    &#125;,<br>
+    "Estructura header": &#123;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"prefix":"fullheader",<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"body":["header.header&gt;nav.header-nav&gt;ul.header-ul&gt;(li.list-item&gt;a.link&#123;Link $&#125;)*&#36;&#123;1:CANTIDAD&#125;"],<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;"Description":"Estructura header completa"<br>
+    &#125;<br>
+    &#125;
+</p>
+<h3>header.header>nav.header-nav>ul.header-ul>(li.list-item>a.link{Link $})*CANTIDAD
+</h3>
+<header class="header">
+    <nav class="header-nav">
+        <ul class="header-ul">
+            <li class="list-item"><a href="" class="link">Link 1  Con el fullheader, sniipet creado tan solo hay que poner la cantidad</a></li>
+            <li class="list-item"><a href="" class="link">Link 2  Con el fullheader, sniipet creado tan solo hay que poner la cantidad</a></li>
+            <li class="list-item"><a href="" class="link">Link 3  Con el fullheader, sniipet creado tan solo hay que poner la cantidad</a></li>
+            <li class="list-item"><a href="" class="link">Link 4  Con el fullheader, sniipet creado tan solo hay que poner la cantidad</a></li>
+            <li class="list-item"><a href="" class="link">Link 5  Con el fullheader, sniipet creado tan solo hay que poner la cantidad</a></li>
+            <li class="list-item"><a href="" class="link">Link 6  Con el fullheader, sniipet creado tan solo hay que poner la cantidad</a></li>
+            <li class="list-item"><a href="" class="link">Link 7  Con el fullheader, sniipet creado tan solo hay que poner la cantidad</a></li>
+            <li class="list-item"><a href="" class="link">Link 8  Con el fullheader, sniipet creado tan solo hay que poner la cantidad</a></li>
+            <li class="list-item"><a href="" class="link">Link 9  Con el fullheader, sniipet creado tan solo hay que poner la cantidad</a></li>
+            <li class="list-item"><a href="" class="link">Link 1  Con el fullheader, sniipet creado tan solo hay que poner la cantidad0</a></li>
         </ul>
     </nav>
 </header>
