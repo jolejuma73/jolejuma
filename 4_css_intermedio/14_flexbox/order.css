@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    }
+div, body {
+    box-sizing: border-box;
+}
+div {
+    background-color: #fff;
+}
+.flexbox {
+    display: flex;  
+    flex-flow: row wrap; 
+    border: 2px solid #000;
+    margin: 20px;
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex-item {/*Posición 2*/
+    width: 100px;
+    height: 60px;
+    background-color: #911;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    order: 1;
+}
+.flex-item:first-child {/*Posición 1*/
+    background-color: #f77;
+    order: 3;
+    }
+.flex-item:last-child {/*Posición 2*/
+    background-color: #ff0; 
+    order: 2;      
+}
+
