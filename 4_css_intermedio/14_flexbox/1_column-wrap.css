@@ -5,17 +5,16 @@ body {
 div, body {
     box-sizing: border-box;
 }
-.flexbox3 {
-    border: 2px solid #000;
+.flexboxCW {
     display: flex;  
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #77f;
+    background-color: #ccc;
     height: 100vh;
 }
-.flex-item3 {
-    width: 150px;
-    height: 150px;
+.flex-itemCW {
+    width: 100px;
+    height: 100px;
     background-color: #abcabc;
     margin: 10px;
     text-align: center;
@@ -23,10 +22,10 @@ div, body {
     font-size: 20px;
     font-weight: bold;
 }
-.flex-item3:first-child {
+.flex-itemCW:first-child {
     background-color: #4fa;
 }
-.flex-item3:last-child {
+.flex-itemCW:last-child {
     background-color: #f0a;
 }
 
