@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    }
+div, body {
+    box-sizing: border-box;
+}
+div {
+    background-color: #fff;
+}
+h4 {
+    color: #008;
+    text-align: center;
+    font-weight: bold;
+}/*Align-self varios item con flex: 1 1 150px*/
+.flexboxas {
+    display: flex;  
+    flex-flow: row wrap; 
+    border: 1px solid #000;
+    margin: 10px;
+    height: 200px;
+    padding: 10px;
+    align-items: center;
+    background-color: transparent;
+    gap: 20px;
+}
+.flex-itemas {
+    background-color: #080;    
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    flex: 0 1 100px;    
+    border: 1px solid #000;
+    border-radius: 5px;
+    flex: 2 1 50px;  
+}
+.flex-itemas:nth-child(2n) {
+    background-color: #bb7; 
+    flex: 2 1 50px; 
+}
+.item-5 {
+    align-self: flex-start ;
+    background-color: #08e;
+    flex: 2 1 300px;    
+}

@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #ccc;
+    }
+div, body {
+    box-sizing: border-box;
+}
+div {
+    background-color: #fff;
+}
+h4 {
+    color: #008;
+    text-align: center;
+    font-weight: bold;
+}
+/*ROW-WRAP*/
+
+.flexboxROWWRAP {
+    display: flex;  
+    flex-flow: row  wrap; 
+    border: 2px solid #000;
+    margin: 20px;
+    height: 120px;
+    align-items: center;
+    justify-content: start;
+    background-color: #fff;
+}
+.flex-itemROWWRAP {
+    background-color: #911;    
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    direction: rtl;
+    width: 200px;
+}
+.flex-itemROWWRAP:first-child {
+    background-color: #fA7;
+    flex-shrink: 0;
+
+    }
+.flex-itemROWWRAP:last-child {
+    background-color: #ff0;
+    flex-shrink: 0;
+    }
+/*ROW-NOWRAP*/
+.flexboxROWNOWRAP {
+    display: flex;  
+    flex-flow: row nowrap; 
+    border: 2px solid #000;
+    margin: 20px;
+    height: 120px;
+    align-items: center;
+    justify-content: start;
+    background-color: #fff;
+}
+.flex-itemROWNOWRAP {
+    background-color: #911;    
+    color: #000;
+    font-size: 20px;
+    text-align: center;
+    direction: rtl;
+    width: 200px;
+}
+.flex-itemROWNOWRAP:first-child {
+    background-color: #a7a;
+    flex-shrink: 0;
+
+    }
+.flex-itemROWNOWRAP:last-child {
+    background-color: #ff0;
+    flex-shrink: 0;
+    }
+/*COLUMN WRAP*/
+.flexboxCOLUMNWRAP {
+    display: flex;  
+    flex-flow: column wrap; 
+    border: 2px solid #000;
+    margin: 20px;
+    align-items: end;
+    justify-content: center;
+    background-color: #fff;
+}
+.flex-itemCOLUMNWRAP {
+    background-color: #911;    
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    direction: rtl;
+    width: 200px;
+    margin: 5px;
+    flex-shrink: 0;
+}
+.flex-itemCOLUMNWRAP:first-child {
+    background-color: #a7a;
+
+    }
+.flex-itemCOLUMNWRAP:last-child {
+    background-color: #f00;
+    flex-shrink: 2;
+    }
+/*COLUMN NOWRAP*/
+.flexboxCOLUMNNOWRAP {
+    display: flex;  
+    flex-flow: column nowrap; 
+    border: 2px solid #000;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.flex-itemCOLUMNNOWRAP {
+    background-color: #9EE;    
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    direction: rtl;
+    width: 200px;
+}
+.flex-itemCOLUMNNOWRAP:first-child {
+    background-color: #a77;
+    flex-shrink: 0;
+
+    }
+.flex-itemCOLUMNNOWRAP:last-child {
+    background-color: #A40;
+    flex-shrink: 0;
+    }
+    
