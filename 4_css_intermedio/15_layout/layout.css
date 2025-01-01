@@ -10,14 +10,14 @@ body, header, div, ul, nav, h1 , h2, p, img {
 } 
 /*--HEADER SECTION--*/
 .header {
-height: 100vh;
+min-height: 100vh;
 box-sizing: border-box;
 background-image:url("header-backgroung-ada13.webp") ;
 display: flex;
 background-size: cover;
 }
 .header__overlay {
-height: 100vh;
+min-height: 100vh;
 width: 100%;
 background-color: #f809; 
 position: absolute; 
@@ -49,22 +49,66 @@ h1 {
 .nav {
     background-color: #fff;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6px 20px ;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 25px #0006;
 }
 .nav__ul {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
 .nav__item {
     list-style: none;
+}
+.nav__ul-container {
+flex-grow: 4;
+}
+.nav__logo-container , .nav__ul-container {
+    flex-grow: 1;
+    text-align: center;
 }
 .nav__link {
 color: #f80;
 text-decoration: none;
 display: inline-block;   /*--los nav item se ponen en linea--*/
-padding: 10px;
+padding: 8px 10px;
 margin: 6px;
+border-radius: 0;
+transition: background-color 0.24s, border-radius 0.2s, outline 0.2s, outline-offset 0.2s;
+margin: 2px;
+outline: 0;
+outline-offset: 0;
+}
+.nav__link:hover {
+    background-color: #f803;
+    border-radius: 20px;
+    outline: 2px solid #f806;
+    outline-offset: -7px;
+}
+.link--login {
+    background-color: #f80;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 24px;
+    margin-left: 20px;
+}
+.link--login:hover {
+    background-color: #b61;
+    outline: none;
 }
 .nav__logo-ada {
     width: 70px; 
+}
+/*--MAIN SECTION--*/
+main {
+    max-width: 800px;
+    margin: auto;
+    font-size: 30px;
+    text-wrap: pretty;
 }
