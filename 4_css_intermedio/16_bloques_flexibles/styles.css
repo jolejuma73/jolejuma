@@ -2,9 +2,15 @@ body {
 margin: 0;
 font-family: sans-serif;
 }
-div, body {
+div, body , h4{
     box-sizing: border-box;
 }
+h4 {
+    color: #b00;
+    text-align: center;
+    font-family: sans-serif;
+}
+/*--bloques de texto--*/
 .flexbox{
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +20,7 @@ div, body {
 }
 .bloque {
     display: inline-block ;
-    min-width: 150px;
+    min-width: 200px;
     background-color: #7af;
     margin: auto;
     width: 100%;
@@ -25,4 +31,35 @@ div, body {
     margin: 4px;
     border: 2px solid #baf;
     border-radius: 5px;
+}
+/*--Todo esto si se quita se queda el html con los tres bloques--*/
+/*--imagen--*/
+.img__apache {
+    max-width: 100%;
+    height: auto;
+}
+
+/*--video 1--*/
+.container {
+    position: relative;
+    max-width: 100%;
+    padding-top: 56.25%;
+    height: 0;
+}
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+}
+/*--video 2--*/
+/* --Para que pueda juntar el bloque de texto y la imagen y videsos en un mismo html hay que poner position relative al container 2 y position absolute al videocontainer2 porque sino sale encima del texto--*/
+.container2 {
+    position: relative;         
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+.videocontainer2 {
+    position: absolute;
+    width: 100%;
 }

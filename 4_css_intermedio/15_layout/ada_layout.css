@@ -111,4 +111,6 @@ main {
     margin: auto;
     font-size: 30px;
     text-wrap: pretty;
+    text-align: justify;
+
 }
