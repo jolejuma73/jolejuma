@@ -14,12 +14,11 @@ div, body p  {
     padding: 30px;
     flex-grow: 1;   
 }
-@media  screen and (max-width:400px){
+@media  screen and (max-width:550px){
     .flexbox {
         flex-direction: column;
     }
     .flex-item {
         background-color: #8e0;
-    }
-    
+    }    
 }
