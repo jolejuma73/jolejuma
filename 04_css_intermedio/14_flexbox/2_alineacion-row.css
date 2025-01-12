@@ -91,7 +91,7 @@ div, body {
     border: 2px solid #000;
     margin: 20px;
     height: 120px;
-    justify-content: end ;
+    justify-content: space-evenly ;
     /* a parte de center se puede usar start o end e irá al principio o final de la caja contenedora*/
     /*space-around: coge la distancia entre el item con respecto al borde y la mantiene, lo que pasa es que entre dos item hay dos distancias*/
     /* 
