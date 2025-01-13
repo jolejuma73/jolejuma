@@ -79,7 +79,7 @@ div {
     flex-flow: column wrap; 
     border: 2px solid #000;
     margin: 20px;
-    height: 100px;
+    height: 30vh;
     align-items: center;
     justify-content: start;
     background-color: #fff;
@@ -88,10 +88,11 @@ div {
     background-color: #911;    
     color: #000;
     font-size: 30px;
+    margin: 5px;
     text-align: center;
     direction: rtl;
-    min-width: 200px;
-    flex-grow: 1;
+    min-width: 25vw;
+    flex-grow: 2;
 }
 .flex-itemCOLUMNmw:first-child {
     background-color: #f77;    
@@ -108,7 +109,7 @@ div {
     flex-flow: column nowrap; 
     border: 2px solid #000;
     margin: 20px;
-    height: 100px;
+    height: 30vh;
     align-items: center;
     justify-content: start;
     background-color: #fff;
@@ -117,6 +118,7 @@ div {
     background-color: #911;    
     color: #000;
     font-size: 30px;
+    margin: 5px;
     text-align: center;
     direction: rtl;
     min-width: 250px;
@@ -136,7 +138,7 @@ div {
     flex-flow: column wrap; 
     border: 2px solid #000;
     margin: 20px;
-    height: 150px;
+    height: 50vh;
     align-items: center;
     justify-content: start;
     background-color: #fff;
@@ -147,8 +149,10 @@ div {
     font-size: 30px;
     text-align: center;
     direction: rtl;
-    flex-basis: 180px;
-    flex-grow: 1;
+    flex-basis: 10vh;
+    flex-grow: 2;
+    flex-shrink: 3;
+
 }
 .flex-itemCOLUMNfbw:first-child {
     background-color: #f77;    
@@ -156,8 +160,11 @@ div {
 
     }
 .flex-itemCOLUMNfbw:last-child {
-    background-color: #ff0;    
-    flex-shrink: 0;    
+    background-color: #ff0; 
+    flex-grow: 5;
+    flex-shrink: 3;
+    flex-basis: 10vh;
+
 }
 /*COLUMN NOWRAP con flex-basis*/
 .flexboxCOLUMNfbnw {
@@ -165,7 +172,7 @@ div {
     flex-flow: column nowrap; 
     border: 2px solid #000;
     margin: 20px;
-    height: 150px;
+    height: 50vh;
     align-items: center;
     justify-content: start;
     background-color: #fff;
@@ -176,7 +183,7 @@ div {
     font-size: 30px;
     text-align: center;
     direction: rtl;
-    flex-basis: 180px;
+    flex-basis: 20vh;
     flex-grow: 1;
 }
 .flex-itemCOLUMNfbnw:first-child {
