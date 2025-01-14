@@ -9,8 +9,7 @@ body {
     background-color: #d6eaf8;
 }
 body, div {    
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 header, nav, main, aside, footer {
     box-sizing: border-box;
@@ -20,7 +19,6 @@ header, nav, main, aside, footer {
 }
 .grid {  
     flex-grow: 1;
-
     min-height: 90vh;
     display: grid;    
     grid-template-columns: minmax(200px, 1fr) minmax(300px, 3fr) minmax(200px, 1fr); 
@@ -52,7 +50,6 @@ main {
     grid-area:main;
     min-width: 300px;
     max-width: 700px;
-
 }
 aside {    
     grid-area:aside;
@@ -73,28 +70,28 @@ nav, aside{
 
 @media screen and (max-width:800px) {
     .grid {
-        grid-template-columns: minmax(200px, 1fr) minmax(300px, 3fr); 
+    grid-template-columns: minmax(200px, 1fr) minmax(300px, 3fr); 
     }
 
     nav, aside {
-        height: auto;
-        position: static;
+    height: auto;
+    position: static;
     }
     aside{
-        display: none;
+    display: none;
     }
 }
 @media screen and (max-width:580px) {
     .grid {
-        grid-template-columns:1fr;
-        grid-template-areas: "nav" "main" "aside";
+    grid-template-columns:1fr;
+    grid-template-areas: "nav" "main" "aside";
     }
     nav, aside {
-        height: auto;
-        position: static;
+    height: auto;
+    position: static;
     }
     aside{
-        display: none;
+    display: none;
     }
 }
 
