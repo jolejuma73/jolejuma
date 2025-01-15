@@ -10,9 +10,9 @@
     <h4>Con justify-items dentro de un grid, alineamos todos los items en el eje horizontal dentro de la celda</h4>
     <h4>Con justify-self dentro de un grid-item, modificamos un solo item. </h4>
     <h4>NO SE MUEVE LA CELDA, TAN SOLO EL ITEM DENTRO DE LA CELDA</h4>
-    <h5>justify-item:start con justify-self....</h5>
+    <h5>GRID START -justify-items: start;justify-content: end;con justify-self....</h5>
     <div class="grid grid-start">
-        <div class="grid-item">1</div>
+        <div class="grid-item">justify-self:end</div>
         <div class="grid-item">2</div>
         <div class="grid-item">3</div>
         <div class="grid-item">4</div>
@@ -21,7 +21,7 @@
         <div class="grid-item">7</div>
         <div class="grid-item">8</div>
     </div>
-    <h5>justify-item:center con justify-self....</h5>
+    <h5>GRID CENTER justify-items: center;justify-content: space-around;con justify-self....</h5>
     <div class="grid grid-center">
         <div class="grid-item">1</div>
         <div class="grid-item">2</div>
@@ -32,7 +32,7 @@
         <div class="grid-item">7</div>
         <div class="grid-item">8</div>
     </div>
-    <h5>justify-item:end con justify-self...</h5>
+    <h5> GRID END  justify-items: end;justify-content: space-evenly con justify-self...</h5>
     <div class="grid grid-end">
         <div class="grid-item">1</div>
         <div class="grid-item">2</div>
@@ -42,6 +42,34 @@
         <div class="grid-item">6</div>
         <div class="grid-item">7</div>
         <div class="grid-item">8</div>
+    </div>
+<!--nuevo-->
+<h5> GRID SPACE-ARROUND  justify-content: space-arround; justify-items: end;</h5>
+    <div class="grid grid-space-arround">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+    <h5>GRID SPACE-EVENLY  justify-content:space-evenly; justify-items: start;</h5>
+    <div class="grid grid-space-evenly">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+    <h5>GRID SPACE-BETWEEN  justify-items: center;  justify-content: space-between;</h5>
+    <div class="grid grid-space-between">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
     </div>
 </body>
 </html>

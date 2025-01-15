@@ -24,7 +24,7 @@ h5, h4 {
     background-color: #cb7;
 }
 .grid-item:last-child {
-    justify-self: center;
+    justify-self: end;
     background-color: #7cb;
 }
 .grid-item {
@@ -33,17 +33,20 @@ h5, h4 {
     font-size: 20px;
     max-width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
     padding: 10px;
 }
-/*--justify-item:start con justify-self...--*/
+/*--GRID START  justify-item:start con justify-self...--*/
 .grid-start {
     justify-items: start;
+    justify-content: end;
+
 }
-/*-- justify-item:center con justify-self--*/
+/*-- GRID CENTER  justify-item:center con justify-self--*/
 .grid-center {
     justify-items: center;
+    justify-content: space-around;
+
 }  
 .grid-center .grid-item:first-child {
     justify-self: start;
@@ -53,15 +56,58 @@ h5, h4 {
     justify-self: left;
     background-color: #71b;
 }
-/*--end--*/
+/*--GRID END   justify-items: end; justify-content: space-evenly;--*/
 .grid-end {
     justify-items: end;
+    justify-content: space-evenly;
+
 }
 .grid-end .grid-item:first-child {
     justify-self: stretch;
     background-color: #7c7;
 }
 .grid-end .grid-item:last-child {
+    justify-self: right;
+    background-color: #b71;
+}
+/*--nuevo--*/
+/*--GRID SPACE-ARROUNDjustify-items: center;justify-content:space-arround;--*/
+
+.grid-space-arround {
+    justify-content: space-arround;
+    justify-items: end;
+}
+.grid-space-arround .grid-item:first-child {
+    justify-self: stretch;
+    background-color: #7c7;
+}
+.grid-space-arround .grid-item:last-child {
+    justify-self: right;
+    background-color: #b71;
+}
+/*--GRID SPACE-EVENLY  justify-items: center;justify-content:space-evenly;--*/
+.grid-space-evenly {  
+    justify-content:space-evenly;
+    justify-items: start;
+}
+.grid-space-evenly .grid-item:first-child {
+    justify-self: start;
+    background-color: #7c7;
+}
+.grid-space-evenly .grid-item:last-child {
+    justify-self: right;
+    background-color: #b71;
+}
+
+/*--GRID SPACE-BETWEEN--*/
+.grid-space-between {  
+    justify-items: center;
+    justify-content: space-between;
+}.grid-space-between .grid-item:first-child {
+    justify-self: end;
+    background-color: #7c7;
+}
+.grid-space-between .grid-item:last-child {
     justify-self: right;
     background-color: #b71;
 }
