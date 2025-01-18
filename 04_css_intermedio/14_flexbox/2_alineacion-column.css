@@ -18,11 +18,12 @@ div, body {
     border: 2px solid #000;
     margin: 8px 20px;
     height: 280px ;
+    width: 300px;
     justify-content: space-evenly ;
     /* a parte de center se puede usar start o end e irá al principio o final de la caja contenedora*/
     /*space-around: coge la distancia entre el item con respecto al borde y la mantiene, lo que pasa es que entre dos item hay dos distancias*/
     /* 
-    space-between:primer elemento al principio del eje. ultimo elemento al final del eje y al rsto los distribuye uniformemente*/
+    space-between:primer elemento al principio del eje. ultimo elemento al final del eje y al resto los distribuye uniformemente*/
     /*space-evenly distribuyen los espacios igual entre los item y los bordes*/
 }
 .flexboxaroundcolumn {
