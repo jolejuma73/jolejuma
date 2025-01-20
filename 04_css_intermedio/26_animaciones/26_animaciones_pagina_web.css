@@ -18,18 +18,17 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 position: relative;
-z-index: 100;
+z-index: 10;
 text-align: center;
-font-size: 25px;
+font-size: 20px;
+color: #48e;
 }
 .header__open-nav-button {
     color: #48e;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     position: absolute;
     right: 10px;
-    z-index: 200; /* Asegura que el botón esté encima del menú ----NUEVO----*/
-    cursor: pointer; /* Indica que es clickeable ----NUEVO----*/
 }
 
 .header__checkbox {
@@ -43,9 +42,7 @@ font-size: 25px;
     height: 100vh;
     width: 100vw;
     top: 0;
-    z-index: 50;  /*  ANTES -1--*/
-    left: 0;   /*----NUEVO----*/
-    padding: 20px;/*----NUEVO----*/
+    z-index: -1;  /*  ANTES -1--*/
 }
 
 .header__nav-list {
@@ -63,8 +60,6 @@ font-size: 25px;
     max-width: 100%;
     width: 64px;
     margin: 10px 20px;
-    position: relative;  /*----NUEVO--LOGO--*/
-    z-index: 200;  /*----NUEVO--LOGO--*/
 }
 
 .header__nav-item {
@@ -72,7 +67,7 @@ font-size: 25px;
 }    
 
 .header__nav-item a {
-    color: #48e;
+    color: inherit;
     text-decoration: none;
 }
 
@@ -82,13 +77,14 @@ font-size: 25px;
 /*--------HEADER QUERIES----------*/
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 500px) {
     .header {
         padding: 20px 0px;
         animation: header-movement both;
         animation-timeline: scroll();
         position: sticky;
         top: 0;
+        animation-range: 10px 100px;
     
     }
     .header__nav {
@@ -97,6 +93,7 @@ font-size: 25px;
         height: auto;
         width: auto;
         justify-content: space-between;
+        background-color: initial;
     }
     .header__nav-list {
         flex-direction: row;
@@ -115,6 +112,7 @@ font-size: 25px;
 .profile {
     container-type: inline-size;
     container-name: profile;
+    animation: aparecer 2.4s -.6s both;
 }
 .profile__wrapper {
     display: flex;
@@ -277,7 +275,10 @@ h1 {
     background-size: cover;
     display: grid;
     place-content: center;
-    border-radius: 8px;
+    border-radius: 12px;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: contain 5% cover 40%;
 }
 
 .portfolio__project:hover {
@@ -319,9 +320,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 30px 0;
     container-type: inline-size;
     container-name: form;
+    animation: aparecer both;
+    animation-timeline: view();
+    animation-range: cover 20% contain 40%;
     
 }
 
@@ -409,8 +413,17 @@ footer {
         background-color: #fff;
     }
     to {
-        padding: 20px 0;
-        background-color: #fff6;
+        padding: 0;
+        background-color: #10163266;
+        color: #fff;
 
+    }
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
