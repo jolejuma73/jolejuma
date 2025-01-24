@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 ;
+    font-family: sans-serif;
+    background-color: #ccc;
+    padding: 20px;
+}
+.box {
+    background-color: #876;
+    background-color: #678;
+    display: grid;
+    place-content: center;
+    color: #fff;  
+    margin: 120px auto;
+    padding: 0 40px;
+    font-size: 30px;
+    width: max(900px, 100%);
+
+}
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;
+}
