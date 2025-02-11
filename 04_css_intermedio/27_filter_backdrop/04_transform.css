@@ -3,19 +3,14 @@ body {
     font-family: sans-serif;
     height: 100vh;
     display: flex;
+    background-color: #38f;
 }
 .box {
     margin: auto;
     padding: 20px 50px; 
-    position: absolute;
-    width: 100%;
-    left: 200px;
-    top: 100px;
     border: 3px solid #ddd;
+    transform: translate(-180px,-230px);
 
-}
-img {
-    filter:  invert(2) drop-shadow(0px 0px 15px #000) grayscale(.5);
 }
 tipos_de_filter {
     filter: drop-shadow(0px 0px 15px #000);
@@ -31,5 +26,21 @@ tipos_de_filter {
     filter: sepia(1) blur(6px);
     filter: sepia(1) blur(6px) contrast(2);
     filter: grayscale(.5) drop-shadow(0px 0px 15px #000) invert(2);
+}
+transform {
+    scale: 2;
+    scale: 2 3;
+    transform: scale(1.62);
+    transform: scale(1,5);
+    transform: scaleY(1.62);
+    transform: scaleX(1.62);
+    transform: skew(30deg);    
+    transform: skewY(30deg);
+    transform: rotate(180deg);
+    transform: translate(180px);
+    transform: translateY(180px);
+    transform: translate(180px,-230px);
+    transform: translate(-180px,230px);
+    translate: 150px 60px;
 }
 
