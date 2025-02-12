@@ -1,5 +1,5 @@
 /* SELECTOR POR ATRIBUTO */
-img[src=monos.jpg] {
+img[src="monos.jpg"] {
     width: 10%;
 }
 img[src$=jpg] {

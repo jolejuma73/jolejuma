@@ -270,7 +270,7 @@ h1 {
 }
 
 .portfolio__project {
-    background-image: linear-gradient(#0006, #0006), url("vikingos2.jpg");
+    background-image: linear-gradient(#0006, #0006), url("../../07_imagenes_ejercicios/vikingos2vikingos2.jpg");
     background-position: center;
     background-size: cover;
     display: grid;
