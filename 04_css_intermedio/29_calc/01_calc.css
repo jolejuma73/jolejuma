@@ -4,7 +4,7 @@
 
 :root{
     --color-principal:#790;
-    --alto-del-box: 100px
+    --alto-del-box: 200px
 }  
     
 
@@ -21,9 +21,9 @@ border: 6px solid #000;
 width: calc(50% + 100px);
 }
 .box:first-child {
-    height: var(--alto-del-box);
+    height: 100px + var(--alto-del-box);
 }
 .box:nth-child(2) {
-height: calc(100vh - var(--alto-del-box));
+height: calc(100vh - var(--alto-del-box)*3 );
 overflow: auto;
 }
