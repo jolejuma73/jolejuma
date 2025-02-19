@@ -1,18 +1,24 @@
-* {
-    box-sizing: border-box;
-}
 body {
-    margin: 0 ;
-    font-family: sans-serif;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh; /* Usamos dvh para establecer la altura completa */
+    background-color: #f0f0f0;
 }
 .box {
-font-size: 15px;
-padding: 0 40px;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-wrap: balance;
+
 }
-p::first-letter {
-    initial-letter: 7 7;
-    padding: 10px;
-    padding-bottom: 0;
-    color: #695;
-    font-family: 'Times New Roman', Times, serif;
+h1 {
+    text-align: center;
+color: #8d3;
 }
