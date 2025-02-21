@@ -26,13 +26,20 @@ margin: 50px auto;
 position: relative;
 border-radius: 20px;
 }
+
+.card span {
+    color: var(--bg-color);
+    text-align: center;
+}
+
 .card__back, .card__front {
     backface-visibility: hidden;
-    transition: transform 1s;
+    transition: transform 2s;
     background-color: var(--card-color);
     border-radius: 20px;
     overflow: hidden;
     padding: 6px;
+    height: 100%;
 }
 
 .card:hover .card__front {
@@ -42,11 +49,24 @@ border-radius: 20px;
 .card__front {
     transform: perspective(1200px) rotateY(0deg);
 }
-
 .card:hover .card__back {
     transform: perspective(1200px) rotateY(360deg);
 }
 
+/* Tarjeta de los Lobos (Giro hacia la izquierda) */
+.card.frontwolf:hover .card__front {
+    transform: perspective(1200px) rotateY(-180deg); /* Gira el frente hacia la izquierda */
+}
+.card.frontwolf:hover .card__back {
+    transform: perspective(1200px) rotateY(0deg); /* Muestra la parte trasera sin rotación adicional */
+}
+.card.backwolf {
+    transform: perspective(1200px) rotateY(180deg); /* Posición inicial de la parte trasera */
+}
+
+.card__front img {
+    border-radius: 16px 16px 0 0;
+}
 .card__worker {
     max-height: 150px;
     overflow: hidden;
@@ -58,6 +78,8 @@ border-radius: 20px;
 
 .card__data {
     padding: 12px;
+    flex-grow: 1; /* Permite que el contenido crezca si es necesario */
+
 }
 
 .card__data span {
@@ -78,6 +100,7 @@ border-radius: 20px;
 .card__back span {
     font-size: 1.5rem;
     margin: 6px 0;
+
 }
 
 .skill-bar {
@@ -90,30 +113,51 @@ border-radius: 20px;
 .skill-bar div {
     background-color: var(--bg-color);
     padding: 9px;
-    color: var(--card-color);
+    color: var(--text-color);    
+
 }
 
 
 .skill-bar:last-child div {
     width: 50%;
-    background-color: rgb(162, 162, 236);
 }
 
 .skill-bar:nth-child(2) div {
-    width: 10%;    background-color: rgb(18, 241, 241);
-
+    width: 10%;    
 }
 
 .skill-bar:nth-child(3) div {
-    width: 40%;    background-color: rgb(0, 255, 21);
-
+    width: 40%;    
 }
 
 .skill-bar:nth-child(4) div {
-    width: 60%;    background-color: red;
-
+    width: 60%;    
 }
 .skill-bar:nth-child(5) div {
-    width: 80%;    background-color: blue;
+    width: 80%; 
+}
 
+/*--LOBOS--*/
+.backwolf {
+    padding-top: 30px;
+}
+/* Estilos específicos para las barras de habilidades dentro de .backwolf */
+
+.backwolf .skill-bar:last-child div {
+    width: 50%; background-color: aqua;
+}
+
+.backwolf .skill-bar:nth-child(2) div {
+    width: 100%;   background-color: rgb(205, 228, 228); 
+}
+
+.backwolf .skill-bar:nth-child(3) div {
+    width: 40%;    background-color: rgb(4, 6, 121); 
+}
+
+.backwolf .skill-bar:nth-child(4) div {
+    width: 60%;    background-color: rgb(65, 241, 49); 
+}
+.backwolf .skill-bar:nth-child(5) div {
+    width: 80%; background-color: rgb(164, 250, 4); 
 }
